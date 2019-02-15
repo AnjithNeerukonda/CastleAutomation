@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.dell.mycastleautomation"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    testImplementation 'junit:junit:4.12'
+    //    implementation files('libs/selenium-server-standalone-3.14.0.jar')
+    //    implementation files('libs/testng-6.14.3.jar')
+    //    implementation files('libs/java-client-6.1.0.jar')
+    implementation files('src/test/java/java-client-6.1.0.jar')
+   implementation files('src/test/java/selenium-server-standalone-3.14.0.jar')
+    implementation files('src/test/java/testng-6.14.3.jar')
+    implementation files('src/test/java/guava-27.0.1-jre.jar')
+    implementation files('src/test/java/httpclient-4.5.5.jar')
+    implementation files('src/test/java/httpcore-4.4.9.jar')
+    implementation files('src/test/java/dom4j-1.6.1.jar')
+    implementation files('src/test/java/ooxml-schemas-1.4.jar')
+    implementation files('src/test/java/poi-3.9.jar')
+    implementation files('src/test/java/poi-ooxml-3.9.jar')
+    implementation files('src/test/java/xmlbeans-3.0.1.jar')
+    //    implementation files('src/test/java/java-client-7.0.0.jar')
+    implementation files('src/test/java/junit-4.12.jar')
+}

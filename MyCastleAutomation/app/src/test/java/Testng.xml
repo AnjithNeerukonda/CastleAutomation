@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression"  parallel="tests" verbose="5">
+
+    <!--<test name="Pixel XL API 26_5.5 inch">-->
+
+        <!--&lt;!&ndash;<parameter name="platform" value="Android 8.0.0"/>&ndash;&gt;-->
+        <!--<parameter name="systemPort" value="8200"/>-->
+        <!--<parameter name="udid" value="emulator-5556"/>-->
+        <!--<parameter name="port" value="4724"/>-->
+        <!--&lt;!&ndash;<parameter name="URL_" value="0.0.0.0:4723/wd/hub"/>&ndash;&gt;-->
+        <!--<classes>-->
+            <!--<class name="Login_Screen.Securityapp.Home_Base" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+
+    <test name="Pixel 2 XL 6.0">
+
+        <!--<parameter name="platform" value="Android 7.1.1"/>-->
+        <parameter name="systemPort" value="8201"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="port" value="4723"/>
+        <!--<parameter name="URL_" value="0.0.0.0:4723/wd/hub"/>-->
+        <classes>
+            <class name="Login_Screen.Login_Base.Login_Base" />
+        </classes>
+    </test>
+
+    <!--<test name="Pixel 3 XL 6.0">-->
+
+        <!--&lt;!&ndash;<parameter name="platform" value="Android 9"/>&ndash;&gt;-->
+        <!--<parameter name="systemPort" value="8202"/>-->
+        <!--<parameter name="udid" value="emulator-5558"/>-->
+        <!--<parameter name="port" value="4726"/>-->
+        <!--&lt;!&ndash;<parameter name="URL_" value="0.0.0.0:4723/wd/hub"/>&ndash;&gt;-->
+        <!--<classes>-->
+            <!--<class name="Profile_Edit.BaseProfile2" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+
+
+    <!--<test name="Pixel XL API 27_5.5">-->
+    <!--<parameter name="platform" value="Android 8.1.0"/>-->
+    <!--<parameter name="udid" value="emulator-5556"/>-->
+    <!--&lt;!&ndash;<parameter name="systemPort" value="8201"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<parameter name="URL_" value="0.0.0.0:4723/wd/hub"/>&ndash;&gt;-->
+    <!--<classes>-->
+    <!--<class name="Profile_Edit.BaseProfile2" />-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Android native app test on Android 7">-->
+    <!--<parameter name="platform" value="Android 7.1.1"/>-->
+    <!--<parameter name="udid" value="emulator-5558"/>-->
+    <!--<parameter name="systemPort" value="8203"/>-->
+    <!--<parameter name="URL_" value="0.0.0.0:4723/wd/hub"/>-->
+    <!--<classes>-->
+    <!--<class name="Profile_Edit.Profile_Base" />-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Android native app test on Android 8.1">-->
+    <!--<parameter name="platform" value="Android 8.1.0"/>-->
+    <!--<parameter name="udid" value="emulator-5558"/>-->
+    <!--<parameter name="systemPort" value="8204"/>-->
+    <!--<classes>-->
+    <!--<class name="AndroidEmulaterList.Base4" />-->
+    <!--</classes>-->
+    <!--</test>-->
+</suite>
