@@ -5,6 +5,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -34,12 +35,13 @@ public class Home_Base {
 //        cap.setCapability("appActivity", "com.developeronrent.mycastle.activity");
 
         driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
-
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
        Allow allinone=new Allow();
        allinone.guest(driver);
 //       allinone.cabs(driver);
 //       allinone.fooddelivery(driver);
-//       allinone.parcels(driver);
+       allinone.parcels(driver);
+
 
 
     }
